@@ -53,7 +53,6 @@ func GetTopProcesses() {
 		}
 
 		//Windows Compatiblilty(Leave out the System Idle Process), for more info refer #30
-
 		if runtime.GOOS == "windows" {
 			if processes[0].Pid == 0 {
 				processes = processes[1:]
